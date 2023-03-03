@@ -1,0 +1,103 @@
+
+Html,
+body {
+  max-width: 100%;
+  font-family: "Roboto" sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  background-color: rgb(240, 168, 62);
+}
+
+.barra-superior {
+  background-color: black;
+  color: white;
+}
+
+.barra-superior .text>a {
+  color: white;
+}
+
+.barra-principal ul {
+  list-style: none;
+}
+
+.barra-principal a {
+  text-decoration-line: none;
+  color: white;
+}
+
+.banner {
+  height: 417px;
+  background-image: url(/images/background-petshop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: cont;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.banner .text .descuento {
+  padding-top: 20px;
+}
+
+.banner .buttom {
+  background-color: rgb(240, 168, 62);
+}
+
+.productos h2 {
+  text-align: start;
+  color: rgb(60, 35, 19);
+}
+
+.productos .nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.productos .nav li {
+  margin-right: 10px;
+}
+
+.productos .nav a {
+  text-decoration: none;
+  color: gray;
+}
+
+.productos .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer {
+  background-color: rgb(60, 35, 19);
+  text-align: start;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer span {
+  color: white;
+  display: block;
+}
