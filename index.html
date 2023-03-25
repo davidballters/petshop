@@ -15,108 +15,144 @@
 <body>
   <div class="container">
     <header>
-      <div class="barra-superior">
+      <div class="barra-top">
         <div class="text">
           <p>Grandes ofertas en comederos</p>
-          <p>Menu Regional</p>
         </div>
 
-        <div class="text">
+        <div class="value">
           <ul>
-            <li>Espanol</li>
-            <li> COL $</li>
+            <li>
+
+              <a href="#">Espanol</a>
+            </li>
+            <li>
+              <a href="#">COL $</a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="barra-principal">
-        <img src="/images/Logo.png" alt="">
-        <ul>
-          <li>
-            <a href="">Categorias</a>
-          </li>
+        <img src="/images/Logo.png" alt="logo-barra-principal" width="166px" height="23px">
+        <div class="menu">
+          <ul>
+            <li>
+              <img src="/images/patita.png" alt="patita">
+              <a href="">Categorias</a>
+            </li>
 
-          <li>
-            <a href="">Pets</a>
-          </li>
+            <li>
+              <img src="/images/patita.png" alt="patita">
+              <a href="">Pets</a>
+            </li>
 
-          <li>
-            <a href="">Nosotros</a>
-          </li>
+            <li>
+              <img src="/images/patita.png" alt="patita">
+              <a href="">Nosotros</a>
+            </li>
 
-          <li>
-            <a href="">Contactanos</a>
-          </li>
-        </ul>
+            <li>
+              <img src="/images/patita.png" alt="patita">
+              <a href="">Contactanos</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <h1>¡Es un placer tenerte aquí! </h1>
     <section class="banner">
       <div class="text">
+        <h1>¡Es un placer tenerte aquí! </h1>
         <p class="descuento">¡Comederos en descuento!</p>
         <button class="buttom">COMEDEROS</button>
       </div>
     </section>
+
     <section class="productos">
-      <img src="/images/pawprint 1.png" alt="">
-      <h2>PRODUCTOS DESTACADOS</h2>
-      <div class="nav">
-        <ul>
-          <li>
-            <a href="">Comederos</a>
-          </li>
-          <li>
-            <a href="">Accesorios</a>
-          </li>
-          <li>
-            <a href="">Comida</a>
-          </li>
-        </ul>
+      <div class="section">
+        <img src="/images/pawprint 1.png" alt="">
+        <h2>PRODUCTOS DESTACADOS</h2>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="">Comederos</a>
+            </li>
+            <li>
+              <a href="">Accesorios</a>
+            </li>
+            <li>
+              <a href="">Comida</a>
+            </li>
+          </ul>
+        </div>
       </div>
-     
+
       <div class="cards">
         <div class="card">
           <img src="/images/churrasquito.png" alt="">
-          <p>Juguete Churrasquito</p>
-          <p>$150</p>
+          <p class="description">Juguete Churrasquito</p>
+          <p class="price">$150</p>
         </div>
+
         <div class="card">
           <img src="/images/comedero.png" alt="">
-          <p>Comedero para perro</p>
-          <p>$250</p>
+          <p class="description">Comedero para perro</p>
+          <p class="price">$250</p>
         </div>
+
         <div class="card">
           <img src="/images/Huesito.png" alt="">
-          <p>Juguete Huesito</p>
-          <p>$150</p>
+          <p class="description">Juguete Huesito</p>
+          <p class="price">$150</p>
         </div>
       </div>
     </section>
 
-    <footer>
-      <form action="#">
-        <p>
-          suscribete para mas novedades: <input type="text" name="Ingresa tu correo electronico">
-          <input type="button" value="suscribirme">
-        </p>
-      </form>
-      <ul>
-        <li>
-          <a href="#"> <img src="/images/ubicacion.png" alt=""></a>
-          <span>Localidad</span>
-        </li>
-        <li>
-          <a href="#"> <img src="/images/telephone.png" alt=""></a>
-          <span>Telefono</span>
+    <form class="contacto" action="#" method="post">
+      <legend>Contactanos</legend>
+      <div class="formulario">
+        <label for="nombre">
+        <input margin-leftmargin-lefttype="text" name="Nombres y Apellidos" id="nombre" placeholder="Nombre y Apellido" required>
+      </label>
+      <label for="email">
+        <input type="email" name="email" placeholder="Ingresa tu Correo electronico" id="email" required>
+      </label>
+      <label for="telefono">
+        <input type="number" name="number" placeholder="Telefono" id="telefono" required>
+      </label>
+      </div>
+      <button class="buttom-gray" type="reset">Reset</button>
+      <button class="buttom-orange" type="submit">Enviar</button>
+    </form>
 
-        </li>
-        <li>
-          <a href="#"> <img src="/images/email.png" alt=""></a>
-          <span>Correo Electronico</span>
-        </li>
-      </ul>/
-      <img clas="logo-white" src="/images/logo-white.png" alt="">
-      <h3>Todos los derechos reservados@Davincho</h3>
+    <footer>
+      <form class="form-footer">
+        <div class="envio-img">
+          <img src="/images/enviar-correo 1.png" alt="enviar Correo">
+          <h3>Suscríbete para más novedades</h3>
+          <input class="email" type="email" name="email" placeholder="Ingresa tu Correo electronico" id="#">
+          <input class="enviar" type="button" value="suscribirme">
+        </div>
+      </form>
+      <div class="social">
+        <img class="logo-white" src="/images/logo-white.png" alt="">
+        <ul>
+          <li>
+            <a href="#"> <img src="/images/ubicacion.png" alt=""></a>
+            <span>Localidad</span>
+          </li>
+          <li>
+            <a href="#"> <img src="/images/telephone.png" alt=""></a>
+            <span>Telefono</span>
+  
+          </li>
+          <li>
+            <a href="#"> <img src="/images/email.png" alt=""></a>
+            <span>Correo Electronico</span>
+          </li>
+        </ul>
+      </div>
+      <p>Todos los derechos reservados Front end</p>
     </footer>
   </div>
 </body>

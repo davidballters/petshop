@@ -1,75 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600;700&family=Poppins:ital,wght@0,400;0,700;1,300;1,700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
-Html,
-body {
-  max-width: 100%;
-  font-family: "Roboto" sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald" sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-right: 30px;
+  padding-left: 30px; */
 }
 
-header {
-  background-color: rgb(240, 168, 62);
+@media only screen and (max-width:480px) {
+
+  header {
+    background-color: rgb(240, 168, 62);
+  }
+
+  .barra-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  .barra-top .value ul {
+    list-style: none;
+  }
+
+  .barra-top .value ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .barra-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .barra-principal ul {
+    list-style: none;
+  }
+
+  .barra-principal .menu ul {}
+
+  .barra-principal a {
+    text-decoration-line: none;
+    color: white;
+  }
+
+  .barra-principal ul li a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    height: 417px;
+    margin-bottom: 40px;
+    background-image: url(/images/banner-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: white;
+  }
+
+  .banner .text {
+    margin-top: 150px;
+    width: 300px;
+    text-align: end;
+  }
+
+  .banner .text .descuento {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .banner .buttom {
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(240, 168, 62);
+  }
+
+  .productos {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .productos .section img {
+    width: 100px;
+  }
+
+  .productos .section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3C2313;
+  }
+
+  .productos .nav {
+    margin-bottom: 40px;
+  }
+
+  .productos .nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .productos .nav a {
+    text-decoration: none;
+    color: gray;
+  }
+
+  .productos .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .productos .card {
+    width: 265px;
+    text-align: center;
+    background-color: ghostwhite;
+    box-shadow: -1px 2px 14px -1px rgba(0, 0, 0, 0.75);
+  }
+
+  .productos .card .description {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(60, 35, 19);
+  }
+
+  .productos .price {
+    color: rgb(240, 168, 62);
+    padding-bottom: 20px;
+  }
+
+  .productos .price:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  .contacto {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .contacto legend {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(60, 35, 19);
+
+  }
+
+  .formulario input {
+    margin-bottom: 10px;
+    padding: 13px 55px;
+    font-size: 10px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(60, 35, 19);
+  }
+
+  .contacto button {
+    padding: 10px 55px;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .contacto .buttom-gray {
+    background-color: gray;
+  }
+
+  .contacto .buttom-orange {
+    background-color: orange;
+  }
+
+  footer {
+    background-color: rgb(60, 35, 19);
+    text-align: start;
+  }
+
+  .envio-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    background-color: #F0A83E;
+  }
+
+  .envio-img h3 {
+    padding-right: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .envio-img .email {
+    padding: 11px 40px;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .envio-img .enviar {
+    padding: 7px 7px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #3C2313;
+
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+
+  .social ul {
+    list-style: none;
+  }
+
+  .social ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer span {
+    color: white;
+    display: block;
+  }
+
+  footer p {
+    font-size: 16px;
+    color: white;
+    background-color: #222222;
+
+  }
 }
 
-.barra-superior {
+.barra-top {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: black;
   color: white;
 }
 
-.barra-superior .text>a {
+.barra-top .value ul a {
+  display: flex;
+  text-decoration: none;
   color: white;
+  gap: 25px;
+}
+
+
+.barra-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  height: 70px;
+  background-color: #F0A83E;
 }
 
 .barra-principal ul {
   list-style: none;
 }
 
+.barra-principal .menu ul {
+  display: flex;
+  gap: 20px;
+
+}
+
 .barra-principal a {
+  font-size: 18px;
   text-decoration-line: none;
   color: white;
 }
 
+.barra-principal ul li a:hover {
+  text-decoration: underline;
+  color: antiquewhite;
+}
+
 .banner {
+  position: relative;
   height: 417px;
-  background-image: url(/images/background-petshop.png);
-  background-size: contain;
+  background-image: url(/images/banner-background.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: cont;
   text-align: center;
 }
 
 h1 {
+  margin-bottom: 10px;
+  padding: 10px;
   font-size: 30px;
   font-weight: 400;
-  text-align: center;
+  background-color: white;
+}
+
+.banner .text {
+  position: absolute;
+  top: 40%;
+  left: 63%;
 }
 
 .banner .text .descuento {
-  padding-top: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .banner .buttom {
+  padding: 10px;
   background-color: rgb(240, 168, 62);
 }
 
-.productos h2 {
-  text-align: start;
+.productos {
+  margin-bottom: 100px;
+}
+
+.productos .section h2 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
   color: rgb(60, 35, 19);
 }
 
 .productos .nav ul {
   display: flex;
+  justify-content: center;
+  gap: 40px;
   list-style: none;
 }
 
-.productos .nav li {
-  margin-right: 10px;
+.section {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .productos .nav a {
@@ -79,13 +383,138 @@ h1 {
 
 .productos .cards {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
 }
 
+.productos .card {
+  text-align: center;
+  box-shadow: 1px 6px 29px 1px rgba(0, 0, 0, 0.5);
+}
+
+.productos .card .description {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(60, 35, 19);
+}
+
+.productos .price {
+  color: rgb(240, 168, 62);
+}
+
+.contacto legend {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #3C2313;
+}
+
+.contacto {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario input {
+  margin-bottom: 10px;
+  width: 410px;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 10px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(60, 35, 19);
+}
+
+.contacto button {
+  margin-top: 20px;
+  margin-right: 15px;
+  padding: 10px 50px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.contacto .buttom-gray {
+  background-color: gray;
+}
+
+.contacto .buttom-orange {
+  background-color: orange;
+}
 
 footer {
   background-color: rgb(60, 35, 19);
   text-align: start;
+}
+
+.envio-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #F0A83E;
+}
+
+.envio-img img {
+  margin-right: 28px;
+  width: 60px;
+}
+
+.envio-img h3 {
+  margin-right: 500px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.envio-img .email {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 35px;
+}
+
+.envio-img .enviar {
+  margin-left: 40px;
+  padding: 7px 7px;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #3C2313;
+}
+
+.social {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 125px;
+  padding-top: 35px;
+
+}
+
+.social .logo-white {
+  position: absolute;
+  content: "";
+  right: 100px;
+  bottom: 160px;
+  width: 260px;
+}
+
+.social ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 footer ul {
@@ -100,4 +529,10 @@ footer a {
 footer span {
   color: white;
   display: block;
+}
+
+footer p {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
